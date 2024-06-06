@@ -1,6 +1,6 @@
 ﻿public class Program
 {
-    public static String PATH = @".\input.txt";
+    public static String PATH = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "input.txt");
     public static StreamReader reader = new StreamReader(PATH);
     public static List<String> input = new List<String>();
     public static List<String> sixLetterWordList = new List<String>();
